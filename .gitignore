@@ -1,0 +1,25 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+.vscode/
+.idea/
+
+# Dependencies / build (not used now, future-proofing)
+node_modules/
+dist/
+.cache/
+
+# Netlify
+.netlify/
+
+# Env / secrets — never commit
+.env
+.env.*
+*.local
+
+# Logs
+*.log
+npm-debug.log*

@@ -1,0 +1,31 @@
+{
+  "name": "Mayur Dresses — Ladies Dress Pieces, Mumbai",
+  "short_name": "Mayur Dresses",
+  "description": "Ladies dress pieces shop in Mangaldas Market, Mumbai. Cotton, Silk, Linen, Muslin, Designer, Printed & more. Wholesale & retail, with pan-India delivery.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FAF6EF",
+  "theme_color": "#5A2A3B",
+  "lang": "en-IN",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192-maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

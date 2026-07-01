@@ -1,0 +1,21 @@
+# Mayur Dresses — robots.txt
+User-agent: *
+Allow: /
+
+# Block nothing of value to crawlers; allow images for image search
+User-agent: Googlebot-Image
+Allow: /
+
+# Common AI crawlers — allowed (small business wants visibility in AI answers)
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://www.mayurdresses.in/sitemap.xml
