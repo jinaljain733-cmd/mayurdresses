@@ -203,7 +203,7 @@
   .btn-ghost:hover{background:var(--wine);color:var(--ivory);border-color:var(--wine)}
 
   /* scroll progress */
-  .progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--gold),var(--gold-lt));z-index:100;transition:width .1s linear}
+  .progress{position:fixed;top:0;left:0;height:3px;width:100%;transform:scaleX(0);transform-origin:left;background:linear-gradient(90deg,var(--gold),var(--gold-lt));z-index:100;transition:transform .1s linear;will-change:transform}
 
   /* ===== ACCESSIBILITY: skip link + focus states ===== */
   .skip-link{position:absolute;top:-48px;left:12px;z-index:200;background:var(--wine);color:var(--ivory);padding:12px 20px;border-radius:8px;font-family:var(--sans);font-weight:600;font-size:14.5px;text-decoration:none;transition:top .2s ease}
@@ -617,9 +617,9 @@
     </div>
 
     <div class="hero-art" aria-hidden="true">
-      <div class="swatch s1"><picture><source srcset="img/hero1_jpg.webp" type="image/webp"><img class="swatch-img" src="img/hero1_jpg.jpg" alt="Red block-print cotton ladies dress piece with gold-border dupatta"></picture><div class="shine"></div></div>
-      <div class="swatch s2"><picture><source srcset="img/hero2_jpg.webp" type="image/webp"><img class="swatch-img" src="img/hero2_jpg.jpg" alt="Pink ladies dress piece with matching dupatta"></picture><div class="shine"></div></div>
-      <div class="swatch s3"><picture><source srcset="img/hero3_jpg.webp" type="image/webp"><img class="swatch-img" src="img/hero3_jpg.jpg" alt="Green floral ladies dress piece with matching dupatta"></picture><div class="shine"></div></div>
+      <div class="swatch s1"><picture><source srcset="img/hero1_jpg.webp" type="image/webp"><img class="swatch-img" src="img/hero1_jpg.jpg" alt="Black ladies dress piece with white floral print and gold-bordered dupatta"></picture><div class="shine"></div></div>
+      <div class="swatch s2"><picture><source srcset="img/hero2_jpg.webp" type="image/webp"><img class="swatch-img" src="img/hero2_jpg.jpg" alt="Sage green ladies dress piece with white floral embroidered dupatta"></picture><div class="shine"></div></div>
+      <div class="swatch s3"><picture><source srcset="img/hero3_jpg.webp" type="image/webp"><img class="swatch-img" src="img/hero3_jpg.jpg" alt="Pink ladies dress piece with white embroidered dupatta"></picture><div class="shine"></div></div>
     </div>
   </div>
   
@@ -671,7 +671,7 @@
     <figure class="about-img reveal">
       <picture>
         <source srcset="img/about_jpg.webp" type="image/webp">
-        <img class="about-photo" src="img/about_jpg.jpg" loading="lazy" decoding="async" alt="Mayur Dresses ladies dress piece collection in Mangaldas Market">
+        <img class="about-photo" src="img/about_jpg.jpg" loading="lazy" decoding="async" alt="Navy blue ladies dress piece with silver embroidery and tasseled dupatta — Mayur Dresses collection">
       </picture>
       <div class="shine"></div>
       <div class="about-stamp"><div class="y">15+</div><small>Years</small></div>
@@ -718,7 +718,7 @@
           <svg class="corner" width="26" height="26" viewBox="0 0 26 26"><circle cx="13" cy="13" r="11" fill="none" stroke="#fff" stroke-width="1.3" opacity=".75"/><circle cx="13" cy="13" r="4" fill="#fff" opacity=".8"/></svg>
         </figure>
         <div class="body"><h3>Cotton Dress Pieces</h3><p>Comfortable, breathable and perfect for everyday elegance.</p>
-          <a class="inq" data-cat="Cotton Dress Pieces">Inquire <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+          <a class="inq" data-cat="Cotton Dress Pieces" href="https://wa.me/919869150563?text=Hi%20Mayur%20Dresses%2C%20I%27m%20interested%20in%20your%20Cotton%20Dress%20Pieces.%20Could%20you%20share%20the%20latest%20designs%20and%20colours%3F" target="_blank" rel="noopener">Inquire <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
       </article>
       <article class="card reveal">
         <figure class="thumb">
@@ -732,7 +732,7 @@
           <svg class="corner" width="26" height="26" viewBox="0 0 26 26"><circle cx="13" cy="13" r="11" fill="none" stroke="#fff" stroke-width="1.3" opacity=".75"/><circle cx="13" cy="13" r="4" fill="#fff" opacity=".8"/></svg>
         </figure>
         <div class="body"><h3>Silk Dress Pieces</h3><p>Beautiful collections for weddings, festive celebrations and traditional occasions.</p>
-          <a class="inq" data-cat="Silk Dress Pieces">Inquire <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+          <a class="inq" data-cat="Silk Dress Pieces" href="https://wa.me/919869150563?text=Hi%20Mayur%20Dresses%2C%20I%27m%20interested%20in%20your%20Silk%20Dress%20Pieces.%20Could%20you%20share%20the%20latest%20designs%20and%20colours%3F" target="_blank" rel="noopener">Inquire <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
       </article>
       <article class="card reveal">
         <figure class="thumb">
@@ -746,7 +746,7 @@
           <svg class="corner" width="26" height="26" viewBox="0 0 26 26"><circle cx="13" cy="13" r="11" fill="none" stroke="#fff" stroke-width="1.3" opacity=".75"/><circle cx="13" cy="13" r="4" fill="#fff" opacity=".8"/></svg>
         </figure>
         <div class="body"><h3>Linen Dress Pieces</h3><p>Sophisticated styles that combine comfort with effortless fashion.</p>
-          <a class="inq" data-cat="Linen Dress Pieces">Inquire <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+          <a class="inq" data-cat="Linen Dress Pieces" href="https://wa.me/919869150563?text=Hi%20Mayur%20Dresses%2C%20I%27m%20interested%20in%20your%20Linen%20Dress%20Pieces.%20Could%20you%20share%20the%20latest%20designs%20and%20colours%3F" target="_blank" rel="noopener">Inquire <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
       </article>
       <article class="card reveal">
         <figure class="thumb">
@@ -760,7 +760,7 @@
           <svg class="corner" width="26" height="26" viewBox="0 0 26 26"><circle cx="13" cy="13" r="11" fill="none" stroke="#fff" stroke-width="1.3" opacity=".75"/><circle cx="13" cy="13" r="4" fill="#fff" opacity=".8"/></svg>
         </figure>
         <div class="body"><h3>Muslin Dress Pieces</h3><p>Soft, lightweight pieces loved for their graceful drape and premium feel.</p>
-          <a class="inq" data-cat="Muslin Dress Pieces">Inquire <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+          <a class="inq" data-cat="Muslin Dress Pieces" href="https://wa.me/919869150563?text=Hi%20Mayur%20Dresses%2C%20I%27m%20interested%20in%20your%20Muslin%20Dress%20Pieces.%20Could%20you%20share%20the%20latest%20designs%20and%20colours%3F" target="_blank" rel="noopener">Inquire <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
       </article>
       <article class="card reveal">
         <figure class="thumb">
@@ -774,7 +774,7 @@
           <svg class="corner" width="26" height="26" viewBox="0 0 26 26"><circle cx="13" cy="13" r="11" fill="none" stroke="#fff" stroke-width="1.3" opacity=".75"/><circle cx="13" cy="13" r="4" fill="#fff" opacity=".8"/></svg>
         </figure>
         <div class="body"><h3>Designer Dress Pieces</h3><p>Exclusive collections with stylish patterns, elegant detailing and modern designs.</p>
-          <a class="inq" data-cat="Designer Dress Pieces">Inquire <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+          <a class="inq" data-cat="Designer Dress Pieces" href="https://wa.me/919869150563?text=Hi%20Mayur%20Dresses%2C%20I%27m%20interested%20in%20your%20Designer%20Dress%20Pieces.%20Could%20you%20share%20the%20latest%20designs%20and%20colours%3F" target="_blank" rel="noopener">Inquire <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
       </article>
       <article class="card reveal">
         <figure class="thumb">
@@ -788,7 +788,7 @@
           <svg class="corner" width="26" height="26" viewBox="0 0 26 26"><circle cx="13" cy="13" r="11" fill="none" stroke="#fff" stroke-width="1.3" opacity=".75"/><circle cx="13" cy="13" r="4" fill="#fff" opacity=".8"/></svg>
         </figure>
         <div class="body"><h3>Printed Dress Pieces</h3><p>A colourful range of floral, ethnic, digital and modern prints.</p>
-          <a class="inq" data-cat="Printed Dress Pieces">Inquire <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+          <a class="inq" data-cat="Printed Dress Pieces" href="https://wa.me/919869150563?text=Hi%20Mayur%20Dresses%2C%20I%27m%20interested%20in%20your%20Printed%20Dress%20Pieces.%20Could%20you%20share%20the%20latest%20designs%20and%20colours%3F" target="_blank" rel="noopener">Inquire <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
       </article>
     </div>
 
@@ -934,9 +934,8 @@
 
   document.getElementById('yr').textContent = new Date().getFullYear();
 
-  // hero entrance
-  window.addEventListener('load', ()=>document.body.classList.add('loaded'));
-  if(document.readyState === 'complete') document.body.classList.add('loaded');
+  // hero entrance — trigger immediately (script runs after DOM is parsed), don't wait for images/fonts/analytics
+  document.body.classList.add('loaded');
 
   // nav solid + scroll progress + hero parallax (combined, RAF-batched, no forced reflow)
   const nav = document.getElementById('nav');
@@ -948,7 +947,7 @@
   function updateOnScroll(){
     const y = window.scrollY;
     nav.classList.toggle('solid', y > 40);
-    progress.style.width = (scrollableHeight > 0 ? (y/scrollableHeight*100) : 0) + '%';
+    progress.style.transform = `scaleX(${scrollableHeight > 0 ? (y/scrollableHeight) : 0})`;
     if(heroArt && !reduce && y < 800) heroArt.style.transform = `translateY(${y*0.06}px)`;
     ticking = false;
   }
@@ -977,14 +976,7 @@
   const io = new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
-  // category inquiry -> WhatsApp
-  document.querySelectorAll('.inq').forEach(btn=>{
-    btn.addEventListener('click', ()=>{
-      const cat = btn.getAttribute('data-cat');
-      const msg = encodeURIComponent(`Hi Mayur Dresses, I'm interested in your ${cat}. Could you share the latest designs and colours?`);
-      window.open(`https://wa.me/${WA_NUMBER}?text=${msg}`,'_blank');
-    });
-  });
+  // category inquiry links now use real hrefs (see markup) — no JS needed, avoids double-opening WhatsApp
 
   // inquiry form -> WhatsApp prefilled
   document.getElementById('sendInquiry').addEventListener('click', ()=>{
