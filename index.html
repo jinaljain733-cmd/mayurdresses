@@ -558,7 +558,7 @@
 <!-- ===== NAV ===== -->
 <header class="nav" id="nav">
   <div class="wrap nav-inner">
-    <a href="#top" class="brand">
+    <a href="/" class="brand" id="logoLink">
       <svg class="logo" viewBox="0 0 48 48" aria-hidden="true">
         <circle cx="24" cy="24" r="22" fill="#5A2A3B"/>
         <g stroke="#D9B877" stroke-width="1.4" fill="none"><circle cx="24" cy="24" r="13"/><circle cx="24" cy="24" r="8"/></g>
@@ -953,6 +953,14 @@
   mm.querySelectorAll('a').forEach(a=>a.addEventListener('click', ()=>mm.classList.remove('open')));
 
   // scroll reveal
+  // logo click: smooth scroll to top, no #top in the URL
+  document.getElementById('logoLink').addEventListener('click', (e)=>{
+    if(window.location.pathname === '/' || window.location.pathname.endsWith('index.html')){
+      e.preventDefault();
+      window.scrollTo({top:0, behavior:'smooth'});
+    }
+  });
+
   const io = new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
